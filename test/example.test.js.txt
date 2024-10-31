@@ -1,0 +1,15 @@
+// test/example.test.js
+import { expect } from 'chai';
+import { add } from '../src/example.js';  // Mengimpor fungsi yang akan diuji
+
+describe('Example Test', function() {
+  it('should return the sum of two numbers', function() {
+    const result = add(2, 3);
+    expect(result).to.equal(5);  // Asersi untuk memeriksa apakah hasilnya benar
+  });
+
+  it('should return a negative number when summing negatives', function() {
+    const result = add(-2, -3);
+    expect(result).to.equal(-5);  // Asersi untuk menguji kasus angka negatif
+  });
+});
