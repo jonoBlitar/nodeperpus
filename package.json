@@ -4,9 +4,11 @@
   "type": "module",
   "description": "belajar fullstack pada perkuliahan",
   "main": "index.js",
+  
   "scripts": {
     "test": "jest",
-    "test:detect-open-handles": "jest --detectOpenHandles"
+    "test:detect-open-handles": "jest --detectOpenHandles",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
