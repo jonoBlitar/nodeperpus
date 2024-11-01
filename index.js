@@ -1,10 +1,10 @@
 import express from "express";
-import db from "./config/db.config.js";
+/*import db from "./config/db.config.js";
 import bukuRoute from "./routes/buku.routes.js"
 import prodRoute from"./routes/prodi.routes.js"
 import mhsRoute from "./routes/mahasiswa.routes.js"
 import pinjamRoute from "./routes/pinjam.routes.js"
-import userRoute from "./routes/user.routes.js"
+import userRoute from "./routes/user.routes.js"*/
 import cors from "cors";
 
 const app=express();
