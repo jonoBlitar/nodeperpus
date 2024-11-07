@@ -1,10 +1,12 @@
 import { Sequelize } from "sequelize";
-const db = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-  host: process.env.DB_HOST,
+const db = new Sequelize('web_lanjut', 'root', '', {
+  host: "localhost",
   dialect: "mysql",
-  dialectModule: import('mysql2'),
   
   
+  dialectOptions: {
+    charset: 'utf8mb4',     // Ganti charset menjadi utf8 atau utf8mb4
+  },
   "define": {
     "timestamps": false
   }  
